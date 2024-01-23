@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>TAREA SEMANA 10 - S1 - LUNES</h1>
+        
+    </header>
+    <main>
+        <h2>Objeto documento(DOM) (document)</h2>
+        <p>Permite al javascript modificar y manipular dinámicamente el contenido, 
+            la estructura y el estilo de un documento HTML. <br>
+            Ejemplo: Si no tenemos acceso al html podemos modificar los estilos como el color, 
+            y lo podemos hacer mediante el javascript.        </p>
+            
+            <h2>- Obtener un Elemento: getElementById</h2>
+            <p>Se utiliza para obtener una referencia a un elemento HTML utilizando su atributo id.
+                Este método permite a los desarrolladores acceder y manipular dinámicamente el 
+                contenido y los estilos de un elemento específico en un HTML. <br>
+                EJEMPLO: Acceder a un elemento "p", que previamente se le asigno un ID "message" </p>
+            
+            <h2>- Obtener un Elemento: querySelector</h2>
+            <p>Al igual que el getElementById tambien se utiliza para obtener una referencia a un elemento HTML, 
+                pero en esta ocasión se puede acceder a el mediante un ID(#) o mediante una clase(.)<br>
+                EJEMPLO: Acceder a un elemento "p", que previamente se le asigno una clase "message" </p>
+
+            <h2>- Obtener Elementos: querySelectorAll</h2>
+            <p>Al igual que los anteriores getElementById querySelector tambien se utiliza para obtener una referencia a un elemento HTML, 
+                pero en esta ocasión se puede acceder a varios elementos mediante un ID(#) o mediante una clase(.)<br>
+                EJEMPLO: Acceder a las etiquetas "a" de una lista de la navegacion, que previamente se le asigno una clase "navBar" </p>
+
+            <h2>Nodos( que cosa son los nodos )</h2>
+            <p>los nodos son los elementos fundamentales que conforman la estructura de un documento HTML. El DOM organiza 
+                la estructura de un documento como un árbol de nodos, donde cada elemento, atributo, texto, comentario, etc., se representa como un nodo en el árbol.
+                <br>EJEMPLO: Nodo de texto, nodo de elemento, nodo de atributos, etc.
+                <br>Otro dato importante es que todo elemento HTML es un nodo, pero no todo nodo es un elemento HTML.
+            </p>
+        
+            <h2>TextContent (contenido elemento)</h2>
+            <p>es una propiedad en el DOM (Document Object Model) de JavaScript que proporciona o establece el contenido de texto de un nodo y 
+                todos sus descendientes. Esta propiedad incluye todo el texto contenido en el nodo, incluyendo el texto de todos sus hijos.
+                <br>EJEMPLO, Obtener acceso a un elemento mediante un getElementById("miDiv"), luego obtener el contenido con un = miDiv.textContent, 
+                y finalmente mostarlo mediante un console.log.
+            </p> 
+            <h2>estilos</h2>
+            <p>Otra caracteristica del DOM es que nos permite cambiar estilos de los elementos.
+                <br>EJEMPLO: message.style.color = 'red'
+            </p> 
+
+            <h2>DomTraversing</h2>
+            <p>Esta propiedad del DOM permite recorrer de un elemento hijo hacia un elemento padre
+            <br>EJEMPLO, Movernos desde una etiqueta "a" hacia una etiqueta "nav", esto lo hacemos con un "parentElement".
+            </p>
+
+            <h2>createElement</h2>
+            <p>El DOM tambien nos permite crear elementos que no han sido creados en el html
+                <br>EJEMPLO: Esto lo hacemos con el createElement
+            </p>
+            
+            <h2>innerHTML</h2>
+            <p>permite acceder y manipular el contenido HTML dentro de un elemento. Puedes obtener el contenido HTML de 
+                un elemento o establecer un nuevo contenido HTML utilizando esta propiedad.
+                <br>EJEMPLO: crear un innerHTML = 'h1'
+            </p>
+
+    </main>
+
+    <footer>
+        <h3>Creado por Luis Lazo</h3>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>
